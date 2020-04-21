@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Repositorios/DatabaseConfig.php';
-require_once 'Entidades/Marcas.php';
+require_once 'Entidades/Marcas.class.php';
 class MarcasRepositories
 {
         
@@ -15,11 +15,12 @@ class MarcasRepositories
         try {
 
             $stmt->execute();
+            return  $pdo->lastInsertId();
         } catch (PDOException $e) {
             echo $e;
         }
 
-        $pdo->close();
+        //$pdo->close();
     }
 
     public function findById($id){

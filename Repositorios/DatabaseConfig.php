@@ -12,7 +12,7 @@ class DatabaseConfig
         $db_host = "localhost";
         $db_nome = "industri_vendedores";
         $db_usuario = "industri_root";
-        $db_senha = "Safetycontrol@";
+        $db_senha = "";
         $db_driver = "mysql";
         # Informações sobre o sistema:
         $sistema_titulo = "Nome do Sistema";
